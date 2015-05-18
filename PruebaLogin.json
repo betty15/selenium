@@ -1,0 +1,48 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 2,
+  "steps": [
+    {
+      "type": "get",
+      "url": "https://q-bree.diverza.com/login.jsp;jsessionid=hRk0oNGth4rx3Re+bNBw9aRf"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "name",
+        "value": "j_rfc"
+      },
+      "text": "AAA010101AAA"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "name",
+        "value": "j_username"
+      },
+      "text": "AAA010101AAA"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "name",
+        "value": "j_password"
+      },
+      "text": "admin"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "btnSubmit"
+      }
+    }
+  ],
+  "data": {
+    "configs": {},
+    "source": "none"
+  },
+  "inputs": [],
+  "timeoutSeconds": 60
+}
